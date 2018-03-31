@@ -129,8 +129,13 @@ int analizis(struct StackNode** root){
 					}
 					return 0;
 				}
-				else if(i > 0)
+				else
 				{
+					if(i > 0)
+					{
+						printf("There is an error with the brackets.\n");
+						return -1;
+					}
 					printf("There is an error with the brackets.\n");
 					return -1;
 				}
